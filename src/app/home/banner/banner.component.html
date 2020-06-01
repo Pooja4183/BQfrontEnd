@@ -1,0 +1,43 @@
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li
+      data-target="#carouselExampleCaptions"
+      data-slide-to="0"
+      class="active"
+    ></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" *ngFor="let item of banners">
+    <div
+      [ngClass]="
+        item.id == currentSlide ? 'carousel-item active' : 'carousel-item'
+      "
+    >
+      <img
+        src="{{ item.image }}"
+        class="d-block w-100"
+        alt="..."
+        height="401"
+      />
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{ item.heading }}</h5>
+        <!-- <p>{{ item.text.join(",") }}</p> -->
+      </div>
+    </div>
+    <div class="carousel-control-prev" role="button" data-slide="prev">
+      <span
+        class="carousel-control-prev-icon"
+        aria-hidden="true"
+        (click)="goPrev()"
+      ></span>
+    </div>
+    <div class="carousel-control-next" role="button" data-slide="next">
+      <span
+        class="carousel-control-next-icon"
+        aria-hidden="true"
+        (click)="goNext()"
+      ></span>
+    </div>
+  </div>
+</div>

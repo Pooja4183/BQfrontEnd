@@ -1,0 +1,25 @@
+import { Component } from "@angular/core";
+import { TranslateService } from "@ngx-translate/core";
+
+@Component({
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
+})
+export class AppComponent {
+  title = "vegipure";
+
+  // supportLanguage = ["en", "fr", "ta", "hi"];
+
+  // constructor(private translateService: TranslateService) {
+  //   this.translateService.addLangs(this.supportLanguage);
+  //   this.translateService.setDefaultLang("en");
+
+  //   const browserlang = this.translateService.getBrowserLang();
+  //   this.translateService.use(browserlang);
+  // }
+
+  // selectLang(lang: string) {
+  //   this.translateService.use(lang);
+  // }
+}

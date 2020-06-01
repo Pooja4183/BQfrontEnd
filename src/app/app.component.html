@@ -1,0 +1,53 @@
+<app-header></app-header>
+<app-banner></app-banner>
+
+<div class="container-fluid m-0 p-0" style="background-color: #ffffff;">
+  <app-product-list></app-product-list>
+</div>
+<br />
+
+<div class="clearfix"></div>
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>
+
+<!-- <div class="container">
+  <div class="row section">
+    <div class="col-md-6 article">
+      <h1
+        i18n="
+          Card Header|Title for the under construction card@@constructionHeader"
+      >
+        Under Construction!
+      </h1>
+      <p
+        i18n="
+          Card Descritpion|A description for the under construction
+          card.@@constructionDescription"
+      >
+        This page is under Construction.
+      </p>
+    </div>
+  </div>
+</div> -->
+
+<!-- internationalization json -->
+
+<!-- <div class="container mb-5">
+  <div class="row">
+    <p>
+      Select Language
+      <select (click)="selectLang($event.target.value)">
+        <option *ngFor="let item of supportLanguage">{{ item }}</option></select
+      >
+    </p>
+    <hr />
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h1>{{ "product.title" | translate }}</h1>
+      <p>{{ "product.desc" | translate }}</p>
+      <p>{{ "product.name" | translate }}</p>
+    </div>
+  </div>
+</div> -->

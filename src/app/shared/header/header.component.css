@@ -1,0 +1,16 @@
+.nava a {
+  color: orchid !important;
+}
+
+.navsub {
+  color: orchid !important;
+  border: orchid 1px solid !important;
+}
+
+.navsub:hover {
+  color: white !important;
+  background-color: orchid !important;
+}
+.topeheader {
+  background-color: #ffffff !important;
+}

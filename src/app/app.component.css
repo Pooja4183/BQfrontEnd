@@ -1,0 +1,66 @@
+/* h1 {
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2,
+h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+}
+input[type="text"],
+button {
+  color: #28a745;
+  font-family: Cambria, Georgia;
+  background-color: #031721;
+  border: #28a745 1px solid;
+} */
+/* everywhere else */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.formborder {
+  border: #28a745 1px solid;
+  padding: 3% 3%;
+  background-color: black;
+}
+
+.btn-add {
+  border: #28a745 1px solid;
+  background-color: #031721;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-top: 2000px;
+  margin-bottom: 50px;
+  background: #8e2de2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4a00e0,
+    #8e2de2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #336666, #99ccff);
+}
+
+.article {
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+  padding: 40px;
+  box-shadow: 1px 1px 100px 10px rgba(0, 0, 0, 0.8);
+}

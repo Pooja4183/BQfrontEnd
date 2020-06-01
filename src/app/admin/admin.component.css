@@ -1,0 +1,51 @@
+.contflu {
+  background-color: #000;
+}
+.contcolor {
+  padding: 2% 5%;
+}
+
+h1 {
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2,
+h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+}
+input[type="text"],
+button {
+  color: #28a745;
+  font-family: Cambria, Georgia;
+  background-color: #031721;
+  border: #28a745 1px solid;
+}
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.formborder {
+  border: #28a745 1px solid;
+  padding: 3% 3%;
+  background-color: black;
+}
+
+.btn-add {
+  border: #28a745 1px solid;
+  background-color: #031721;
+}
