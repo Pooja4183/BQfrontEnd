@@ -7,7 +7,7 @@ import { HttpClientModule, HttpClient } from "@angular/common/http";
 import { SharedModule } from "./shared/shared.module";
 import { ContentModule } from "./content/content.module";
 import { HomeModule } from "./home/home.module";
-import { ProductService } from "./content/product.service";
+import { ProductService } from "./shared/service/product.service";
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { AdminComponent } from "./admin/admin.component";
