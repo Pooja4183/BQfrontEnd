@@ -38,4 +38,12 @@ export class ProductService {
         console.log(response);
       });
   }
+
+  delete(productId) {
+    this.httpClient
+      .delete<{ BqPro: Product }>(this.url + "/" + productId)
+      .subscribe((response) => {
+        console.log(response);
+      });
+  }
 }

@@ -17,9 +17,21 @@
                 ><i class="fa fa-shopping-bag"></i
               ></a>
             </li>
+
             <li>
               <a href="" data-tip="Add to Cart"
                 ><i class="fa fa-shopping-cart"></i
+              ></a>
+            </li>
+            <li>
+              <a data-tip="Edit Product" routerLink="/edit/{{ pro.id }}"
+                ><i class="fa fa-pencil"></i
+              ></a>
+            </li>
+
+            <li class="mt-5">
+              <a href="#" data-tip="Delete Product"
+                ><i class="fa fa-trash" (click)="deleteProduct(pro.id)"></i
               ></a>
             </li>
           </ul>
@@ -42,8 +54,6 @@
               *ngFor="let abc of [].constructor(pro.rating)"
             ></li>
           </ul>
-
-          <a class="add-to-cart" routerLink="/edit/{{ pro.id }}">productId</a>
         </div>
       </div>
     </div>

@@ -21,4 +21,9 @@ export class ProductListComponent implements OnInit {
       (err) => console.log(err)
     );
   }
+
+  deleteProduct(productId) {
+    console.log(productId);
+    this.productservice.delete(productId);
+  }
 }
