@@ -8,5 +8,5 @@ export class Product {
   discountPrice: Number;
   discountLable: Number;
   rating: Number;
-  sale: Number;
+  sale: string;
 }

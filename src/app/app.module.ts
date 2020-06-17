@@ -12,10 +12,11 @@ import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { AdminComponent } from "./admin/admin.component";
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { EditProductComponent } from './admin/edit-product/edit-product.component';
 
 
 @NgModule({
-  declarations: [AppComponent, AdminComponent],
+  declarations: [AppComponent, AdminComponent, EditProductComponent],
   imports: [
     ReactiveFormsModule,
     BrowserModule,

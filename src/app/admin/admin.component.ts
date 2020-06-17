@@ -7,6 +7,7 @@ import {
   Validators,
   FormBuilder,
 } from "@angular/forms";
+import { ProductService } from "../shared/service/product.service";
 
 @Component({
   selector: "app-admin",
@@ -16,6 +17,7 @@ import {
 export class AdminComponent implements OnInit {
   bqProduct: Product;
   productform: FormGroup;
+  log: string;
 
   id = new FormControl("");
   price = new FormControl("", Validators.required);
@@ -28,7 +30,7 @@ export class AdminComponent implements OnInit {
   rating = new FormControl("", Validators.required);
   sale = new FormControl("", Validators.required);
 
-  constructor(private fb: FormBuilder, private httpClient: HttpClient) {
+  constructor(private fb: FormBuilder, private productService: ProductService) {
     this.productform = fb.group({
       id: this.id,
       price: this.price,
@@ -46,17 +48,7 @@ export class AdminComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit() {
-    // this.httpClient.get<{movies: Movie[]}>("http://localhost:5000/api/movies")
-    // .subscribe((movieData)=>{
-    // this.movies = movieData.movies;
     console.log("On submit");
-    this.httpClient
-      .post<{ BqPro: Product }>(
-        "http://localhost:5000/api/products",
-        this.productform.value
-      )
-      .subscribe((productfor) => {
-        console.log(productfor);
-      });
+    this.productService.create(this.productform.value);
   }
 }

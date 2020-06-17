@@ -24,7 +24,7 @@
             </li>
           </ul>
           <span class="product-new-label">{{ pro.sale }}</span>
-          <span class="product-discount-label">{{ pro.discountLable }}</span>
+          <span class="product-discount-label">{{ pro.discountLable }}%</span>
         </div>
 
         <div class="product-content">
@@ -42,7 +42,8 @@
               *ngFor="let abc of [].constructor(pro.rating)"
             ></li>
           </ul>
-          <a class="add-to-cart" href="">+ Add To Cart</a>
+
+          <a class="add-to-cart" routerLink="/edit/{{ pro.id }}">productId</a>
         </div>
       </div>
     </div>

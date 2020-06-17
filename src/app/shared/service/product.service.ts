@@ -19,5 +19,23 @@ export class ProductService {
     return this.httpClient.get<{ product: Product[] }>(this.url);
   }
 
-  
+  getProductById(id) {
+    return this.httpClient.get<{ product: Product }>(this.url + "/" + id);
+  }
+
+  create(product) {
+    this.httpClient
+      .post<{ BqPro: Product }>(this.url, product)
+      .subscribe((response) => {
+        console.log(response);
+      });
+  }
+
+  update(product) {
+    this.httpClient
+      .put<{ BqPro: Product }>(this.url + "/" + product.id, product)
+      .subscribe((response) => {
+        console.log(response);
+      });
+  }
 }
